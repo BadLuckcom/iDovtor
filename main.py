@@ -9,12 +9,12 @@ from aiogram.types.input_file import FSInputFile
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 import database
-from config import BOT_TOKEN, ADMIN_ID
+# from config import BOT_TOKEN, ADMIN_ID
 
-# from dotenv import load_dotenv
-# load_dotenv()
-# BOT_TOKEN = os.getenv("BOT_TOKEN")
-# ADMIN_ID = int(os.getenv("ADMIN_ID", 0))
+from dotenv import load_dotenv
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID", 0))
 
 
 # print("Loaded BOT_TOKEN:", BOT_TOKEN)
